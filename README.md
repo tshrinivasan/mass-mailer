@@ -1,33 +1,32 @@
-====Mass Mailer using Gmail====
+Mass Mailer using Gmail
+=====
 
-Hi,
 
-First make sure that , whether u changed/set ur  gmail user name and its password in "mail.py" at line number  10 and 11.
+### Requirements
+1. Install these dependencies.<br>
+  `$ sudo apt-get install python python-dev`
+  
+2. You need to have an account in Gmail.
 
-In "body" file , u have to type the text of the body.
+### How to use this script:
+1. First make sure that, whether you have changed/set your gmail user name and it's password in "mail.py" at line number 10 and 11.
 
-In "to_mails" , u have to type the to mail address.  conditions : type one by one . i.e type one mail id and then press "Enter".
+2. In "body" file, you put the content of the mail that you want to send.
 
-Subject : In "mail.py"  at line no 49 , we have method arguments like   [ mail ( to_mail, subject , body , attachment )  ].
+3. In "to_mails" file,add the list of email address you want to send the email given that there is **only one email address per line**
 
-so u make sure about the subject of the mail , [ edit in mail.py ].
+4. In "mail.py"  at line 45, make sure you provide the *SUBJECT* string
 
-Make sure that, ur attachment should be in the same folder.
+5. (Optional) If there are any attachments, specify the file names in line 46. and make sure the attachments are in same folder as the *mail.py* file.
 
-pl verify ur pdf document.
 
-Run the program :  $ python mail.py
+### Running the program:
+`$ python mail.py`
 
-before that , $ sudo apt-get install python python-dev
 
-Note : to run this program , u must have an account in gmail
-good bye.
-~           
-
-Note: Only 500 mails can be sent via gmail per day.
+### Note: 
+**Only 500 mails can be sent via gmail per day**
 
 http://support.google.com/a/bin/answer.py?hl=en&answer=166852
 
 http://google.wikia.com/wiki/Gmail_sending_limit
-
-
